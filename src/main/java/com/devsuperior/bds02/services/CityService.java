@@ -22,6 +22,7 @@ public class CityService {
 	@Autowired
 	private CityRepository repository;
 
+	@Transactional
 	public CityDTO insert(CityDTO dto) {
 		City entity = new City();
 		entity.setName(dto.getName());
